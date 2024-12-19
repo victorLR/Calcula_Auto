@@ -7,7 +7,8 @@
         v-model.number="num1"
         placeholder="Digite o primeiro número"
       />
-      <select v-model="operation">
+      <!-- Não esquecer!!! vou utilizar o switch-->
+      <select v-model="operation"> 
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
@@ -51,6 +52,7 @@ const result = computed(() => {
 </script>
 
 <style scoped>
+
 .calculator {
   width: 300px;
   margin: 50px auto;
@@ -76,4 +78,5 @@ select {
   font-size: 20px;
   margin: 0;
 }
+
 </style>
